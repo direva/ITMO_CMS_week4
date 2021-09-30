@@ -2,6 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
 app.use(bodyParser.text())
+app.get('*', (req, res) => res.send('hello'))
 app.post('/result4/', (req, res) => {
     const xTest = req?.headers?.['x-test']
     const xBody = req?.body
