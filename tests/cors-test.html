@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cors test</title>
+    <script src="cors-test.js" defer></script>
+</head>
+<body>
+<div>
+    <h2>request form</h2>
+    <div>
+        <input style="width: 150px" type="text" name="body" id="reqBody" placeholder="write body for request">
+    </div>
+    <div>
+        <input style="width: 150px" type="text" name="x-test" id="reqXTest" placeholder="write x-test header value">
+    </div>
+    <button id="send">send request</button>
+</div>
+<div>
+    <h2>request result</h2>
+    <div id="response"></div>
+</div>
+</body>
+</html>
