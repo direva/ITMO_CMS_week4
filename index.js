@@ -9,11 +9,11 @@ app.use(cors())
 app.post('/result4/', (req, res) => {
     const xTest = req?.headers?.['x-test']
     const xBody = req?.body
-    res.json({ message: 'direva99', "x-result": xTest, "x-body": xBody })
+    res.json({ message: 'itmo287656', "x-result": xTest, "x-body": xBody })
 })
 app.get('/result4/', (req, res) => {
     const xTest = req?.headers?.['x-test']
     const xBody = 'abc'
-    res.json({ message: 'direva99', "x-result": xTest, "x-body": xBody })
+    res.json({ message: 'itmo287656', "x-result": xTest, "x-body": xBody })
 })
 app.listen(PORT, () => console.log(`App is listening on ${PORT}`))
